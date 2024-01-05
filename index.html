@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Pop It</title>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const hamburgerIcon = document.querySelector('.hambuger-icon');
+				const closeIcon = document.querySelector('.close-icon');
+				const navMobileUl = document.querySelector('.nav-mobile__ul');
+
+				hamburgerIcon.addEventListener('click', function () {
+					navMobileUl.classList.add('active');
+					hamburgerIcon.classList.add('hide');
+					closeIcon.classList.remove('hide');
+				});
+
+				closeIcon.addEventListener('click', function () {
+					navMobileUl.classList.remove('active');
+					hamburgerIcon.classList.remove('hide');
+					closeIcon.classList.add('hide');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-cont">
+				<a href="#"> NE_PUPYRKA.RU </a>
+				<nav class="nav-desktop">
+					<ul class="header__ul">
+						<li>
+							<a href="#">O HAC</a>
+						</li>
+						<li>
+							<a href="#discounts"> Discounts </a>
+						</li>
+						<li>
+							<a href="#contacts"> Contacts </a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="nav-mobile">
+					<img
+						src="./images/hamburger.png"
+						class="hambuger-icon"
+						alt="hamburger-icon"
+					/>
+					<img
+						src="./images/close.png"
+						class="close-icon hide"
+						alt="close-icon "
+					/>
+					<ul class="nav-mobile__ul">
+						<li>
+							<a href="#">O HAC</a>
+						</li>
+						<li>
+							<a href="#discounts"> Discounts </a>
+						</li>
+						<li>
+							<a href="#contacts"> Contacts </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="hero">
+				<div class="background">
+					<div class="hero__container">
+						<h1 class="hero__title">POP IT!</h1>
+						<p class="hero__subtitle">
+							The best anti-stress toy is an endless bubble wrap!
+						</p>
+						<a href="#" class="hero__btn">Buy</a>
+					</div>
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="about__title">What is popit?</h2>
+				<p class="about__paragraph">
+					Pop it literally translates as "pop it". This is a child's game, the
+					process of which can be compared to the bursting of an air-bubble
+					wrapping film. But unlike film, pop-its can be pressed with the
+					characteristic sensations and sounds "infinitely": dozens of silicone
+					bubbles are simply squeezed out in the other direction.
+				</p>
+			</div>
+			<div class="products">
+				<h2 class="products__title">Choose your Pop-it!</h2>
+				<div class="products__items">
+					<div class="product__item">
+						<img
+							src="./images/square.png"
+							alt="multicolored square"
+							class="product__img"
+						/>
+						<h5 class="product__title">Multicolored square</h5>
+						<a href="#" class="product__btn">Buy</a>
+					</div>
+					<div class="product__item">
+						<img
+							src="./images/amongus.png"
+							alt="Among Us marble"
+							class="product__img"
+						/>
+						<h5 class="product__title">Among Us, marble</h5>
+						<a href="#" class="product__btn">Buy</a>
+					</div>
+					<div class="product__item">
+						<img
+							src="./images/round.png"
+							alt="colorful round"
+							class="product__img"
+						/>
+						<h5 class="product__title">Colorful round</h5>
+						<a href="#" class="product__btn">Buy</a>
+					</div>
+				</div>
+			</div>
+			<div class="rules">
+				<div class="rules__cont">
+					<div class="rules-background">
+						<div class="rules__info">
+							<h2 class="rules__title">Rules of the game</h2>
+							<p>
+								Players take turns and click on the pimples. It is necessary to
+								finish the series that you started. You can press a maximum of 3
+								pimples at the same time (they must be nearby, you cannot press
+								several pimples at once if they are not back to back) The task
+								is to make the opponent go last. Whoever goes last loses!
+							</p>
+						</div>
+						<div class="rules__img">
+							<img src="./images/photo.jpg" alt="rules" class="rules-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<ul class="footer__links">
+				<li class="footer__link active"><a href="#">NE_PUPYRKA.RU</a></li>
+				<li class="footer__link"><a href="#">Payment Methods</a></li>
+				<li class="footer__link"><a href="#">Delivery</a></li>
+				<li class="footer__link"><a href="#">Wholesale</a></li>
+				<li class="footer__link"><a href="#">Contacts</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
